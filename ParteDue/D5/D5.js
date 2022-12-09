@@ -11,7 +11,9 @@ REGOLE
 */
 
 // const pets = ["dog", "cat", "hamster", "redfish"];
-// console.log(pets);
+// for (let i = 0; i < pets.length; i++) {
+//   console.log(pets[i]);
+// }
 
 /* ESERCIZIO 2
     Scrivi del codice per ordinare alfabeticamente gli elementi dell'array "pets".
@@ -19,7 +21,9 @@ REGOLE
 
 // const pets = ["dog", "cat", "hamster", "redfish"];
 // pets.sort();
-// console.log(pets);
+// for (let i = 0; i < pets.length; i++) {
+//   console.log(pets[i]);
+// }
 
 /* ESERCIZIO 3
     Scrivi del codice per stampare nuovamente in console gli elementi dell'array "pets", questa volta in ordine invertito.
@@ -27,7 +31,9 @@ REGOLE
 
 // const pets = ["dog", "cat", "hamster", "redfish"];
 // pets.sort().reverse();
-// console.log(pets);
+// for (let i = 0; i < pets.length; i++) {
+//   console.log(pets[i]);
+// }
 
 /* ESERCIZIO 4
     Scrivi del codice per spostare il primo elemento dall'array "pets" in ultima posizione.
@@ -35,7 +41,9 @@ REGOLE
 
 // const pets = ["dog", "cat", "hamster", "redfish"];
 // pets.push(pets.shift());
-// console.log(pets);
+// for (let i = 0; i < pets.length; i++) {
+//   console.log(pets[i]);
+// }
 
 /* ESERCIZIO 5
     Dato il seguente array di oggetti, scrivi del codice per aggiungere ad ognuno di essi una proprietà "licensePlate" con valore a tua scelta.
@@ -127,10 +135,10 @@ REGOLE
 //     trims: ["life", "style", "r-line"],
 //   },
 // ];
-// let firstPropriety = cars[0].trims.slice(0, 1);
-// let secondPropriety = cars[1].trims.slice(0, 1);
-// let thirdPropriety = cars[2].trims.slice(0, 1);
-// const justTrims = [firstPropriety, secondPropriety, thirdPropriety];
+// const justTrims = [];
+// for (let i = 0; i < cars.length; i++) {
+//   justTrims.push(cars[i].trims[0]);
+// }
 // console.log(justTrims);
 
 /* ESERCIZIO 8
@@ -138,20 +146,44 @@ REGOLE
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
+// const cars = [
+//   {
+//     brand: "Ford",
+//     model: "Fiesta",
+//     color: "red",
+//     trims: ["titanium", "st", "active"],
+//   },
+//   {
+//     brand: "Peugeot",
+//     model: "208",
+//     color: "blue",
+//     trims: ["allure", "GT"],
+//   },
+//   {
+//     brand: "Volkswagen",
+//     model: "Polo",
+//     color: "black",
+//     trims: ["life", "style", "r-line"],
+//   },
+// ];
+
+// for (let i = 0; i < cars.length; i++) {
+//   if (cars[i].color.charAt(0) === "b") {
+//     console.log("Fizz");
+//   } else {
+//     console.log("Buzz");
+//   }
+// }
+
 /* ESERCIZIO 9
     Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
 */
 
-// Senza ciclo while
 // const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
-// const newnumeriArray = numericArray.slice(0, 14);
-// console.log(newnumeriArray);
-
-//Con ciclo while - Da fare
-// const numericArray = [6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105];
-// while (numericArray < ["14"]) {
-//   numericArray--;
-//   console.log(numericArray);
+// let i = 0;
+// while (numericArray[i] !== 66) {
+//   console.log(numericArray[i]);
+//   i++;
 // }
 
 /* ESERCIZIO 10
@@ -159,29 +191,27 @@ REGOLE
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
-const charactersArray = ["g", "n", "u", "z", "d"]; // 7, 14, 21, 26, 4
-const numbersArray = [];
-charactersArray.splice(0, 1, "7");
 
-switch (numbersArray) {
-  case "g":
-    charactersArray.splice(0, 1, "7");
-    break;
-  case "n":
-    console.log("14");
-    break;
-  case "u":
-    console.log("21");
-    break;
-  case "z":
-    console.log("26");
-    break;
-  case "d":
-    console.log("4");
-    break;
-}
-// let numbersArray = [];
-console.log(numbersArray);
+// const charactersArray = ["g", "n", "u", "z", "d"]; // 7, 14, 21, 26, 4
+// const numbersArray = [];
+// for (let i = 0; i < charactersArray.length; i++) {
+//   const letter = charactersArray[i];
+//   switch (letter) {
+//     case "g":
+//       numbersArray.push(7);
+//       break;
+//     case "n":
+//       numbersArray.push(14);
+//       break;
+//     case "u":
+//       numbersArray.push(21);
+//       break;
+//     case "z":
+//       numbersArray.push(26);
+//       break;
+//     case "d":
+//       numbersArray.push(4);
+//       break;
+//   }
+// }
 // console.log(numbersArray);
-
-// Da fare per bene: 8, 9 (fatto ma alternativo) e 10
