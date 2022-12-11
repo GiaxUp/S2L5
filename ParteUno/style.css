@@ -15,6 +15,7 @@ header img {
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e9edee;
+  overflow-x: hidden;
 }
 
 .wordsbar {
@@ -39,7 +40,8 @@ body {
   height: 20px;
   background-color: #f56600;
   text-align: center;
-  margin-top: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .orangebox p {
@@ -59,7 +61,7 @@ body {
 .holidaybox h1,
 h3 {
   color: white;
-  padding: 50px 0px 50px 0px;
+  padding: 40px 0px 10px;
 }
 
 .album {
@@ -77,10 +79,11 @@ h3 {
 
 .album img {
   width: 20vw;
-  height: 40vh;
+  height: 45vh;
   display: inline-block;
   border-radius: 10px;
   margin-left: 5px;
+  margin-right: 20px;
   border: lightgray;
   background-color: #272f38;
   box-shadow: 5px 5px 5px lightgray;
@@ -116,6 +119,11 @@ footer img {
 }
 
 .footertext a:visited {
+  color: white;
+}
+
+.footertext {
+  font-weight: bold;
   color: white;
 }
 
